@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "envx"
+version = "0.1.0"
+description = "AI-powered environment configuration agent"
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+openai = "^1.3.0"
+pydantic = "^2.0.0"
+rich = "^13.0.0"
+click = "^8.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+envx = "envx.cli:cli" 
